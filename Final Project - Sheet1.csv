@@ -1,0 +1,112 @@
+Test Case ID,Test Scenario,,Pre Condition,Test Cases Step,Test Data,Type,Expected Output,Test Date,Result,Status
+Sign In,,,,,,,,,,
+TC1,Verify Sign In Successfully,,Visitor https://opensource-demo.orangehrmlive.com/   ,"1. Go to https://opensource-demo.orangehrmlive.com/   
+2. Input Valid Username
+3. Input Valid Password
+4. Click Sign In button","Username:Admin, Pass :admin123 ",Positive,Success Sign In,2022-12-18,"Showing success message:
+Sign In successful and go to Make Appointment page",Passed
+TC2,Verify Sign In Failed,Invalid Username,Visitor https://opensource-demo.orangehrmlive.com/   ,"1. Go to https://opensource-demo.orangehrmlive.com/   
+2. Input Invalid Username
+3. Input Valid Password
+4. Click Sign In button","Username: dodo123
+Pass:  admin123",Negative,Fail Sign In,2022-12-18,"Showing error message:
+Invalid credentials",Passed
+TC3,,Invalid Password,Visitor https://opensource-demo.orangehrmlive.com/   ,"1. Go to https://opensource-demo.orangehrmlive.com/   
+2. Input Valid Username
+3. Input Invalid Password
+4. Click Sign In button","Username: Admin
+Pass:  asdfg123",Negative,Fail Sign In,2022-12-18,"Showing error message:
+Invalid credentials",Passed
+TC4,,Blank Field,Visitor https://opensource-demo.orangehrmlive.com/   ,"1. Go to https://opensource-demo.orangehrmlive.com/   
+2. Click Sign In button",-,Negative,Fail Sign In,2022-12-18,"Showing error message:
+required username and password.",Passed
+Log out,,,,,,,,,,
+TC5,Verify Log out Successfully,,Login as registered account,"1. Go to https://katalon-demo-cura.herokuapp.com/
+2. Click profile picture
+3. Click Log Out button",-,Positive,Success Logged out,2022-12-18,Go to LoginPage,Passed
+Admin,,,,,,,,,,
+TC6,Search System Users by User Role,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click Menu Admin
+3. Click Dropdown User Role 
+4. Click one of user role
+5. Click search",,Positive,Success showing system users by user role,2022-12-18,showing system users list search by user role,Passed
+TC7,Search System Users by Username,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu Admin
+3. Click Form Username 
+4. Input valid username
+5. Click search
+",,Positive,Success showing system users by username,2022-12-18,showing system users list search by username,Passed
+TC8,Search System Users by status,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu Admin
+3. Click Dropdown Status 
+4. Click one of status
+5. Click search",,Positive,Success showing system users by status,2022-12-18,showing system users list search by status,Passed
+PIM,,,,,,,,,,
+,Add new employee,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click Menu PIM
+3. Click + add 
+4. Input First, Middle, Last name
+5. Click save
+",,Positive,Success add new employee,2022-12-18,"Success add new employee, Showing new employee on list",Passed
+,Search employee by name ,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click Menu PIM
+3. Click on form employee name 
+4. Input valid employee name
+5. Click search",,Positive,Success showing employee by name,2022-12-18,Success showing employee list search by name,Passed
+TC9,Delete employee,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click Menu PIM
+3. Click icon delete on one of employee list",,Positive,Success delete employee list,2022-12-18,Success delete one of choosen employee list,Passed
+Leave,,,,,,,,,,
+,Search Leave list by leave type ,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click Menu leave
+3. Click Dropdown leave type
+4. Click one of leave type
+5. Click search",,Positive,Success showing leave list by leave type,2022-12-18,showing leave list search by leave type,
+,Approve leave list,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click Menu leave
+3. Click Approve on one of leave list
+",,Positive,Success approve leave list,2022-12-18,Success Approve one of choosen leave list,
+TC10,Reject leave list,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click Menu leave
+3. Click Reject on one of leave list
+",,Positive,Success reject leave list,2022-12-18,Success reject one of choosen leave list,Passed
+Time,,,,,,,,,,
+,Search employee by name ,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu Time
+3. Click on form employee name 
+4. Input valid employee name
+5. Click search",,Positive,Success showing employee by name,2022-12-18,Success showing employee list search by name,Passed
+TC10,View one of Timesheets list ,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu Time
+3. Click view",,Positive,Success view one of timesheet list,2022-12-18,Showing one of detail timesheet on timesheet list,Passed
+Recruitment,,,,,,,,,,
+TC6,Search vacancies by vacancy,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu recrutment
+3. Click Vacancies
+4. Click Dropdown vacancy 
+5. Click one of vacancy
+6. Click search",,Positive,Success vacancies list search by vacancy,2022-12-18,showing vacancies list search by vacancy,Passed
+TC6,Search vacancies by status,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu recrutment
+3. Click Vacancies
+4. Click Dropdown status 
+5. Click one of status
+6. Click search",,Positive,Success vacancies list search by status,2022-12-18,showing vacancies list search by status,Passed
+TC6,Search vacancies by job tittle,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu recrutment
+3. Click Vacancies
+4. Click Dropdown job tittle
+5. Click one of job tittle
+6. Click search",,Positive,Success vacancies list search by job tittle,2022-12-18,showing vacancies list search by job tittle,Passed
+My Info,,,,,,,,,,
+TC10,Add attachment on my info,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/ 
+2. Click menu my info
+3. click add attachment
+4. Select file 
+5. Click save",,Positive,Success add attachment,2022-12-18,showing popup Success add attachment,Passed
+Performance,,,,,,,,,,
+TC10,view my trackers,,Login as registered account,"1. Go to https://opensource-demo.orangehrmlive.com/  
+2. Click Menu performance
+3. Click my trackers
+4. Click view on one of list
+",,Positive,Success view my trackers,2022-12-18,"Success view my trackers, showing my trackers page",Passed
