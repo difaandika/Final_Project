@@ -6,7 +6,10 @@ describe('Final Project', () => {
     cy.get("button[type='submit']").click()
     cy.get(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module").should('contain', 'Dashboard')
     cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > aside:nth-child(1) > nav:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(5) > a:nth-child(1)").click()
-
+    cy.get("li[class='oxd-topbar-body-nav-tab --visited'] a[class='oxd-topbar-body-nav-tab-item']").click()
+    cy.get("div[class='oxd-select-text oxd-select-text--focus'] div[class='oxd-select-text-input']").select('Senior QA').should('have.value', 'Senior QA')
+    cy.get("button[type='submit'].oxd-button ").click()
+    cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)").should('contain', 'Senior QA')
   })
 
   it('Search vacancies by status',() => {
@@ -16,7 +19,10 @@ describe('Final Project', () => {
     cy.get("button[type='submit']").click()
     cy.get(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module").should('contain', 'Dashboard')
     cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > aside:nth-child(1) > nav:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(5) > a:nth-child(1)").click()
-
+    cy.get("li[class='oxd-topbar-body-nav-tab --visited'] a[class='oxd-topbar-body-nav-tab-item']").click()
+    cy.get("div[class='oxd-select-text oxd-select-text--focus'] div[class='oxd-select-text-input']").select('Active').should('have.value', 'Active')
+    cy.get("button[type='submit'].oxd-button ").click()
+    cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1)").should('contain', 'Active')
   })
 
   it('Search vacancies by job tittle',() => {
@@ -26,6 +32,9 @@ describe('Final Project', () => {
     cy.get("button[type='submit']").click()
     cy.get(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module").should('contain', 'Dashboard')
     cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > aside:nth-child(1) > nav:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(5) > a:nth-child(1)").click()
-
+    cy.get("li[class='oxd-topbar-body-nav-tab --visited'] a[class='oxd-topbar-body-nav-tab-item']").click()
+    cy.get("div[class='oxd-select-text oxd-select-text--focus'] div[class='oxd-select-text-input']").select('QA Lead').should('have.value', 'QA Lead')
+    cy.get("button[type='submit'].oxd-button ").click()
+    cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)").should('contain', 'QA Lead')
   })
 })

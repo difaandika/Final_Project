@@ -7,7 +7,6 @@ describe('Final Project', () => {
     cy.get(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module").should('contain', 'Dashboard')
     cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > aside:nth-child(1) > nav:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(2)").click()
     cy.get("div[class='oxd-input-group oxd-input-field-bottom-space'] div input[class='oxd-input oxd-input--active']").type('Admin')
-    // cy.get(".oxd-form").then(()=>{cy.get("button[type='submit'] .oxd-button ").click()})
     cy.get("button[type='submit'].oxd-button ").click()
     cy.get("div[class='oxd-table-card'] div:nth-child(2) div:nth-child(1)").should('contain', 'Admin')
   })
